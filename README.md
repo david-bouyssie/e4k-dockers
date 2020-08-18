@@ -1,10 +1,13 @@
 # e4k-dockers
 Docker files to ease building Embeddinator-4000 on Windows
 
-## To build the images run:
+## To build the images, clone this repo then run:
 
 ```
+cd xamarin-vs19-windows-docker
 docker build -t dbo/xamarin-vs19:latest -m 4GB .
+
+cd ../e4k-windows-docker
 docker build -t dbo/e4k-vs19:latest -m 4GB .
 ```
 
